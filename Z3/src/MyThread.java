@@ -7,10 +7,11 @@ public class MyThread extends Thread{
         this.name = name;
     }
     public void run(){
-     while(Main.money>damage) {
-         Main.money = Main.money - damage;
+  while(Main.money>damage) {
+        Main.money = Main.money - damage;
          System.out.println(name + " removed " + damage + " money. Remained " + Main.money + " money.");
          damaged += damage;
+         Thread.yield();
         }
     }
 }

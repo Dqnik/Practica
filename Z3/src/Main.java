@@ -4,7 +4,7 @@ public class Main {
    static MyThread ob2 = new MyThread(30, "Thread 2");
    static MyThread ob3 = new MyThread(5, "Thread 3");
    static MyThread ob4 = new MyThread(3, "Thread 4");
-    public static int money = 100;
+    public static int money = 105;
     public static void main(String[] args) {
         ob1.start();
         ob2.start();
